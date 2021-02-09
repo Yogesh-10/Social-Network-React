@@ -13,7 +13,7 @@ const CommentInput = ({ id, comments }) => {
 		if (comment !== '') {
 			commentArray.push({
 				comment: comment,
-				username: user.email.replace('@gmail.com', '').toLowerCase(),
+				username: user.displayName,
 			})
 
 			db.collection('posts').doc(id).update({

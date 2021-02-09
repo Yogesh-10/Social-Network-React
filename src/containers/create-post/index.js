@@ -56,7 +56,7 @@ const CreatePost = () => {
 								timestamp: firebase.firestore.FieldValue.serverTimestamp(),
 								caption: caption,
 								photoUrl: imageUrl,
-								username: user.email.replace('@gmail.com', ''),
+								username: user.displayName,
 								profileUrl: user.photoURL,
 							})
 						})

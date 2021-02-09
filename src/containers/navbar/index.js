@@ -9,7 +9,12 @@ const Navbar = () => {
 		<div className='navbar'>
 			<h4>Social Network</h4>
 			{user ? (
-				<img className='navbar__img' src={user.photoURL} />
+				<>
+					<img className='navbar__img' src={user.photoURL} />
+					<div className='navbar__text'>
+						<p>{user.displayName}</p>
+					</div>
+				</>
 			) : (
 				<SignInButton />
 			)}

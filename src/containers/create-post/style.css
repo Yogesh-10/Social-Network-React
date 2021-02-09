@@ -20,6 +20,11 @@
 .createPost__uploadBtn {
 	border: none;
 	background-color: white;
+	cursor: pointer;
+}
+
+.createPost__uploadBtn:focus {
+	outline: none;
 }
 
 .createPost__loggedInBottom {
@@ -53,4 +58,8 @@
 
 .createPost__para {
 	font-size: 18px;
+}
+
+.upload__btn:focus {
+	outline: none;
 }

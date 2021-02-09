@@ -4,3 +4,8 @@
 	padding: 12px 24px;
 	background-color: white;
 }
+
+.navbar__img {
+	height: 35px;
+	border-radius: 8px;
+}

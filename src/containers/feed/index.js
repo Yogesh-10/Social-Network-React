@@ -17,6 +17,7 @@ const Feed = () => {
 			{posts.map(({ id, post }) => (
 				<Post
 					key={id}
+					id={id}
 					profileUrl={post.profileUrl}
 					username={post.username}
 					photoUrl={post.photoUrl}

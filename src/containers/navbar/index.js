@@ -7,7 +7,7 @@ const Navbar = () => {
 	const [user, setUser] = useContext(UserContext).user
 	return (
 		<div className='navbar'>
-			<p>Social Network</p>
+			<h4>Social Network</h4>
 			{user ? (
 				<img className='navbar__img' src={user.photoURL} />
 			) : (

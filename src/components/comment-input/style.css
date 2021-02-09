@@ -1,0 +1,30 @@
+.commentInput {
+	display: flex;
+	justify-content: space-between;
+}
+
+.commentInput__textarea {
+	border: none;
+	width: 100%;
+	resize: none;
+	margin: 8px 0px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.commentInput__textarea:focus {
+	outline: none;
+}
+
+.commentInput_btn {
+	background-color: #fff;
+	border: #fff;
+	cursor: pointer;
+}
+
+.commentInput_btn:focus {
+	outline: none;
+}

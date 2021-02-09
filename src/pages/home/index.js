@@ -1,4 +1,5 @@
 import { CreatePost, Navbar } from '../../containers'
+import Feed from '../../containers/feed'
 import './style.css'
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
 		<div className='home'>
 			<Navbar />
 			<CreatePost />
+			<Feed />
 		</div>
 	)
 }

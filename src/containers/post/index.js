@@ -31,9 +31,10 @@ const Post = ({ profileUrl, username, id, photoUrl, caption, comments }) => {
 					<img src={profileUrl} className='post__profilePic' />
 					<p style={{ marginLeft: '8px' }}>{username}</p>
 				</div>
-				<button onClick={deletePost} className='post__delete'>
-					Delete
-				</button>
+				{user && (
+					<button onClick={deletePost} className='post__delete'>
+					</button>
+				)}
 			</div>
 
 			<div className='post__center'>

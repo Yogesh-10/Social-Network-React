@@ -63,6 +63,8 @@ const CreatePost = () => {
 					setCaption('')
 					setProgress(0)
 					setImage(null)
+
+					document.getElementById('image-preview').style.display = 'none'
 				}
 			)
 		}
@@ -110,10 +112,13 @@ const CreatePost = () => {
 					</div>
 				</div>
 			) : (
-				<div>
-					<SignInButton />
-					<p style={{ marginLeft: '12px' }}>to create post & comments</p>
-				</div>
+				<>
+					<div>
+						<p className='createPost__para' style={{ marginLeft: '12px' }}>
+							Login or signup to create posts & comments
+						</p>
+					</div>
+				</>
 			)}
 		</div>
 	)
